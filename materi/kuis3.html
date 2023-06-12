@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-utama2" style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-secondary">
+            <div class="brand-logo">
+                <a href="../beranda.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Home
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-secondary text-white">
+            <div class=" header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <h2 class="text-white mt-4 pl-3">Kuis 3</h2>
+
+                </div>
+                <div class="header-right pt-3 pr-4">
+                    <b><span id="namalihat">Nama Siswa</span><i class="pl-3 ti-user"></i></b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+            <div class="nk-nav-scroll bg-primary">
+                <ul class="metismenu bg-primary" id="menu">
+                    <li class="bg-white pl-4">
+                        <img src="../assets/images/Logo_Dalam.png" width="80%" height="auto" alt="">
+                    </li>
+                    <li class="nav-label">Daftar Isi</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Bagian
+                                Tubuh Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan1.html">Pendahuluan</a></li>
+                            <li><a href="materi1.html">Materi</a></li>
+                            <li><a href="kuis1.html">Kuis 1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Fotosintesis, Proses
+                                Paling
+                                Penting di Bumi </span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan2.html">Pendahuluan</a></li>
+                            <li><a href="materi2.html">Materi</a></li>
+                            <li><a href="kuis2.html">Kuis 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Perkembangbiakan
+                                Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan3.html">Pendahuluan</a></li>
+                            <li><a href="materi3.html">Materi</a></li>
+                            <li><a href="kuis3.html">Kuis 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="evaluasi.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Evaluasi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="logout()" style="cursor: pointer;" class="bg-danger" aria-expanded="false">
+                            <i class="fa fa-sign-out"></i><span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg">
+
+                        <div id="petunjukkuis">
+                            <div class="isi p-2 " style="width: 100%;">
+                                <div class="row">
+
+                                    <div class="col-lg m-3">
+                                        <div class="h5 font-weight-bold">
+                                            <div class="ms-3 mb-3 me-3">
+                                                <div class="row">
+                                                    <div class="col-xl">
+                                                        <a style="cursor:default;">
+                                                            <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                                style="font-weight: normal;">
+                                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                                Petunjuk
+                                                            </div>
+                                                        </a>
+                                                        <div class="collapse show" id="collapseExample">
+                                                            <div class="card card-body border border-success"
+                                                                style="font-weight: normal; height: 230px;">
+                                                                <div class="angka">
+                                                                    <ol>
+                                                                        <li>
+                                                                            Kuis ini terdiri dari 10 soal
+                                                                        </li>
+                                                                        <li>
+                                                                            Setiap soal memiliki 10 poin.
+                                                                        </li>
+                                                                        <li>
+                                                                            Tekan “Mulai Kuis” jika data diri anda sudah
+                                                                            benar.
+                                                                        </li>
+                                                                        <li>
+                                                                            Bacalah soal dengan teliti dan pilih salah
+                                                                            satu
+                                                                            jawaban
+                                                                            yang dianggap benar.
+                                                                        </li>
+                                                                        <li>
+                                                                            Setelah seluruh soal selesai dijawab, klik
+                                                                            “Selesai”
+                                                                            untuk menyelesaikan kuis.
+                                                                        </li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-xl">
+                                                        <a style="cursor:default;">
+                                                            <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                                style="font-weight: normal;">
+                                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                                Data Siswa
+                                                            </div>
+                                                        </a>
+                                                        <div class="collapse show" id="collapseExample">
+                                                            <div class="card card-body border border-success"
+                                                                style="font-weight: normal; height: 230px;">
+                                                                <div class="row">
+                                                                    <div class="col-xl-3">
+                                                                        Nama
+                                                                    </div>
+                                                                    <div class="col-xl">
+                                                                        : <span id="namasiswa"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-xl-3">
+                                                                        NISN
+                                                                    </div>
+                                                                    <div class="col-xl">
+                                                                        : <span id="nisnsiswa"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-xl-3">
+                                                                        Kelas
+                                                                    </div>
+                                                                    <div class="col-xl">
+                                                                        : <span id="kelassiswa"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3 mb-3">
+                                                                    <div class="col-xl-3">
+                                                                        Sekolah
+                                                                    </div>
+                                                                    <div class="col-xl">
+                                                                        : <span id="sekolahsiswa"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2 text-center">
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="pendahuluan3.html"
+                                                                        style="cursor: pointer;"><i
+                                                                            class="fa fa-arrow-circle-left"></i>
+                                                                        Kembali ke Materi</a>
+                                                                    <a id="mulai1" class="btn text-white"
+                                                                        onclick="formkuis();"
+                                                                        style="cursor: pointer; background-color: #2980b9;"><i
+                                                                            class="fa fa-start"></i> Mulai
+                                                                        Kuis</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="soalkuis" hidden>
+                            <div class="isi p-2" style="width: 100%; background-color: white;">
+                                <div class="row">
+
+                                    <div class="col-lg-9 ">
+                                        <div class="row">
+                                            <div class="col-lg">
+                                                <div class=" isi" style="height: 410px; width: 100%;">
+                                                    <div class="bg-primary text-white p-2">
+                                                        <div class="text-truncate" style="font-weight: normal;">
+                                                            Pertanyaan <span id="indeks"></span> dari 10
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <span class="rounded-pill p-1 me-2">
+                                                                Sisa Waktu : <span id="waktu"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="soal isicontent" style="font-weight: normal;">
+                                                        <div class="m-3">
+                                                            <div class="list-soal">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg m-2" style="padding-left: 0rem; padding-right: 0rem;">
+                                                <div class="">
+                                                    <a class="btn btn-danger" id="soalPrev" onclick="" tabindex="-1"
+                                                        aria-disabled="true" style="cursor: pointer; float: left;"
+                                                        hidden>Sebelumnya</a>
+
+                                                    <a id="soalNext" class="btn text-white btn-primary"
+                                                        onclick="soal2();"
+                                                        style="cursor: pointer;  float: right;">Selanjutnya</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 border border-3 border-primary">
+                                        <div class="h5 font-weight-bold">
+                                            <h5 class="text-center border bg-primary text-white">
+                                                Nomor Soal</h5>
+                                            <div class="card text-white bg-white"
+                                                style="max-width: 100%; border: 2px solid #40513B;">
+                                                <div class="card-body-12 p-2">
+                                                    <span class="dftrSoal">
+                                                        <button type="button" id="soal1" onclick="soal1();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">1</button>
+                                                        <button type="button" id="soal2" onclick="soal2();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">2</button>
+                                                        <button type="button" id="soal3" onclick="soal3();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">3</button>
+                                                        <button type="button" id="soal4" onclick="soal4();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">4</button>
+                                                        <button type="button" id="soal5" onclick="soal5();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">5</button>
+                                                        <button type="button" id="soal6" onclick="soal6();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">6</button>
+                                                        <button type="button" id="soal7" onclick="soal7();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">7</button>
+                                                        <button type="button" id="soal8" onclick="soal8();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">8</button>
+                                                        <button type="button" id="soal9" onclick="soal9();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">9</button>
+                                                        <button type="button" id="soal10" onclick="soal10();"
+                                                            class="card-body-4 btn btn-outline-primary mb-2 btnkuis">10</button>
+                                                        <center>
+                                                            <a type="button" id="submit1"
+                                                                class="card-body-4 btn btn-danger mb-2 "
+                                                                style="cursor: pointer;" data-toggle="modal"
+                                                                data-target="#ModalSubmit1">Selesai</a>
+                                                        </center>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="soal" style="font-weight: normal;">
+                                            </div>
+                                        </div>
+                                        <div class="h6">
+                                            <h5>Keterangan: </h5>
+                                            <a class="btn btn-light btn-outline-primary text-center text-dark mb-1"
+                                                style="width: 30%; cursor: text;">Putih</a> = Belum dijawab
+                                            <br>
+                                            <a class="btn btn-primary text-center"
+                                                style="width: 30%; cursor: text;">Hijau</a> = Sudah dijawab
+                                            <br>
+                                            <div class="mt-4">
+                                                Setelah menjawab semua pertanyaan, silahkan tekan tombol
+                                                "Selesai"
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="hasilkuis" hidden>
+                            <div class="isi p-2 border border-primary" style="width: 100%;">
+                                <div class="row">
+                                    <div class="col-lg m-3 bg-white">
+                                        <div class="h5 font-weight-bold">
+                                            <div class="h3 text-center" style="font-weight: normal;">Hasil
+                                                Kuis
+                                                3
+                                            </div>
+                                            <hr style="border-top: 3px dashed #609966;">
+                                            <div id="hasilL" class="hasil" style="font-weight: normal;" hidden>
+                                                <center>
+                                                    <div class="m-5" style="width: 75%; border: 2px solid #609966;">
+                                                        <table>
+                                                            <tr>
+                                                                <td style="width: 40%;">Nama Lengkap</td>
+                                                                <td class="text-center" style="width: 20%;">
+                                                                    :
+                                                                </td>
+                                                                <td style="width: 40%;"><span id="namaHL"></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kelas</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="kelasHL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sekolah</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="sekolahHL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Nilai</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="nilaiHL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Waktu</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="waktuHL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Hari, Tanggal</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="tanggalHL"></span></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a id="Back1" class="btn btn-primary m-3"
+                                                            href="pendahuluan3.html" style="cursor: pointer;">Kembali
+                                                            ke Materi</a>
+                                                        <a id="Next1" class="btn btn-primary m-3" href="evaluasi.html"
+                                                            style="cursor: pointer;">Materi
+                                                            berikutnya</a>
+                                                        <div class="alert alert-success" role="alert">
+                                                            Selamat! Nilai dari hasil kuis anda di atas KKM,
+                                                            anda
+                                                            bisa lanjut ke materi berikutnya.
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </div>
+                                            <div id="hasilTL" class="hasil" style="font-weight: normal;" hidden>
+                                                <center>
+                                                    <div class="m-5"
+                                                        style="width: 75%; border: 2px solid rgb(86, 86, 255);">
+                                                        <table>
+                                                            <tr>
+                                                                <td style="width: 40%;">Nama Lengkap</td>
+                                                                <td class="text-center" style="width: 20%;">
+                                                                    :
+                                                                </td>
+                                                                <td style="width: 40%;"><span id="namaHTL"></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kelas</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="kelasHTL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sekolah</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="sekolahHTL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Nilai</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="nilaiHTL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Waktu</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="waktuHTL"></span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Hari, Tanggal</td>
+                                                                <td class="text-center"> : </td>
+                                                                <td><span id="tanggalHTL"></span></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a id="Back1" class="btn btn-primary m-3"
+                                                            href="pendahuluan3.html" style="cursor: pointer;">Kembali
+                                                            ke Materi</a>
+                                                        <a id="Next1" class="btn btn-primary m-3" href="evaluasi.html"
+                                                            style="cursor: pointer;">Materi
+                                                            berikutnya</a>
+                                                        <div class="alert alert-danger" role="alert">
+                                                            Nilai dari hasil kuis anda di bawah KKM,
+                                                            silahkan
+                                                            tekan
+                                                            "Kembali ke Materi" untuk mengulang materi
+                                                            kembali.
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+    <!-- Modal Submit5 -->
+    <div class="modal fade" id="ModalSubmit1" tabindex="-1" role="dialog" aria-labelledby="ModalSubmit1Title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title text-center" id="ModalSubmit1Title">Konfirmasi</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menyelesaikan Kuis?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">kembali</button>
+                    <button type="button" onclick="cekKuis1()" data-dismiss="offcanvas" data-target="#daftarSoal"
+                        class="btn btn-primary">Yakin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kuis Kosong -->
+    <div class="modal fade" id="ModalKuisKosong" tabindex="-1" role="dialog" aria-labelledby="ModalKuisKosongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title text-center" id="ModalSubmit2Title">Peringatan</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Jawaban masih ada yang kosong!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> -->
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
+
+
+    <!-- DB JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+    <script src="../assets/js/db.js"></script>
+    <script src="../assets/js/kuis3.js"></script>
+    <script src="../assets/js/simpankuis3.js"></script>
+
+
+</body>
+
+</html>

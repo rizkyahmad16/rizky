@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "soal": "Bagaimana bentuk daun pada tumbuhan padi . . .",
+    "a": "Daun hergerigi",
+    "b": "Daun lonjong",
+    "c": "Daun bulat",
+    "d": "Daun runcing",
+    "jawaban": "B"
+  },
+  {
+    "id": 2,
+    "soal": "Bagaimana jenis tumbuhan padi . . .",
+    "a": "Tumbuhan semak",
+    "b": "Tumbuhan berbunga",
+    "c": "Tumbuhan berkayu",
+    "d": "Tumbuhan berumpun",
+    "jawaban": "D"
+  },
+  {
+    "id": 3,
+    "soal": "Apa fungsi utama tumbuhan padi . . .",
+    "a": "Untuk makanan",
+    "b": "Untuk hiasan",
+    "c": "Untuk obar-obatan",
+    "d": "Untuk bahan baku",
+    "jawaban": "A"
+  },
+  {
+    "id": 4,
+    "soal": "Padi termasuk dalam kelompok tumbuhan yang disebut . . .",
+    "a": "Tumbuhan berbunga",
+    "b": "Tumbuhan serangga",
+    "c": "Tumbuhan biji",
+    "d": "Tumbuhan lumut",
+    "jawaban": "C"
+  },
+  {
+    "id": 5,
+    "soal": "Bagaimana tumbuhan padi berkembang biak . . .",
+    "a": "Diambil dari biji",
+    "b": "Diambil dari bibit",
+    "c": "Diambil dari umbi",
+    "d": "Diambil dari akar",
+    "jawaban": "B"
+  },
+  {
+    "id": 6,
+    "soal": "Bagian tumbuhan padi yang berfungsi untuk menyerap air dan nutrisi dari tanah adalah . . .",
+    "a": "Akar",
+    "b": "Batang",
+    "c": "Daun",
+    "d": "Bunga",
+    "jawaban": "A"
+  },
+  {
+    "id": 7,
+    "soal": "Bagian padi yang berfungsi sebagai tempat terjadinya fotosintesis adalah . . .",
+    "a": "Akar",
+    "b": "Batang",
+    "c": "Daun",
+    "d": "Bunga",
+    "jawaban": "C"
+  },
+  {
+    "id": 8,
+    "soal": "Bagian padi yang berfungsi sebagai alat pernapasan adalah  . . .",
+    "a": "Bunga",
+    "b": "Daun",
+    "c": "Batang",
+    "d": "Akar",
+    "jawaban": "B"
+  },
+  {
+    "id": 9,
+    "soal": "Proses penyerbukan pada bunga padi terjadi melalui . . .",
+    "a": "Angin",
+    "b": "Serangga",
+    "c": "Hewan vertebrata",
+    "d": "Air",
+    "jawaban": "A"
+  },
+  {
+    "id": 10,
+    "soal": "Padi yang tumbuh di lahan yang tergenang air disebut  . . .",
+    "a": "Padi gogo",
+    "b": "Padi lebak",
+    "c": "Padi ladang",
+    "d": "Padi sawah",
+    "jawaban": "D"
+  }
+]

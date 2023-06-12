@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-utama2" style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-secondary">
+            <div class="brand-logo">
+                <a href="../beranda.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Home
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-secondary text-white">
+            <div class=" header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <h2 class="text-white mt-4 pl-3">Perkembangbiakan
+                        Tumbuhan</h2>
+
+                </div>
+                <div class="header-right pt-3 pr-4">
+                    <b><span id="namalihat">Nama Siswa</span><i class="pl-3 ti-user"></i></b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+            <div class="nk-nav-scroll bg-primary">
+                <ul class="metismenu bg-primary" id="menu">
+                    <li class="bg-white pl-4">
+                        <img src="../assets/images/Logo_Dalam.png" width="80%" height="auto" alt="">
+                    </li>
+                    <li class="nav-label">Daftar Isi</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Bagian
+                                Tubuh Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan1.html">Pendahuluan</a></li>
+                            <li><a href="materi1.html">Materi</a></li>
+                            <li><a href="kuis1.html">Kuis 1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Fotosintesis, Proses
+                                Paling
+                                Penting di Bumi </span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan2.html">Pendahuluan</a></li>
+                            <li><a href="materi2.html">Materi</a></li>
+                            <li><a href="kuis2.html">Kuis 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Perkembangbiakan
+                                Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan3.html">Pendahuluan</a></li>
+                            <li><a href="materi3.html">Materi</a></li>
+                            <li><a href="kuis3.html">Kuis 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="evaluasi.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Evaluasi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="logout()" style="cursor: pointer;" class="bg-danger" aria-expanded="false">
+                            <i class="fa fa-sign-out"></i><span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="card isicontent" style="height: 510px;">
+                            <div class="card-body">
+                                <div class="bordTujuan">
+                                    Tujuan Pembelajaran
+                                </div>
+                                <div class="bordU">
+                                    <div class="angka">
+                                        <ol>
+                                            <li>
+                                                Peserta didik bisa mengidentifikasi bagian-bagian tumbuhan dan
+                                                fungsinya.
+                                            </li>
+                                            <li>
+                                                Peserta didik bisa mendeskripsikan cara perkembangbiakan tumbuhan.
+                                            </li>
+                                            <li>
+                                                Peserta didik bisa mengaitkan hubungan makhluk hidup lain dan komponen
+                                                abiotik. dalam membantu perkembangbiakan tumbuhan.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="bordU2 mt-2">
+                                    <div class="brs mb-2">
+                                        Pada video ini adalah penjelasan tentang Perkembang Biakan Tumbuhan. pengguna
+                                        diminta
+                                        untuk menyimak dan memperhatikan penjelasan video ini dengan baik.
+                                    </div>
+                                    <center>
+                                        <figure>
+                                            <video id="video3" onended="stopVideo('video3hide')" width="65%"
+                                                height="auto" controls>
+                                                <source src="../assets/video/video3.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <figcaption>Video 5 Perkembang Biakan Tumbuhan</figcaption>
+                                        </figure>
+                                    </center>
+                                </div>
+
+                                <div id="video3hide" hidden>
+                                    <div class="brs">
+                                        Perkembangan tumbuhan berfokus pada proses reproduksi tumbuhan,
+                                        yang terdiri dari mekanisme untuk memastikan keragaman genetik dan
+                                        pembiakan. Proses reproduksi tumbuhan melibatkan proses fisiologi, kimia, dan
+                                        biokimia yang kompleks yang membantu memastikan bahwa gen yang
+                                        diturunkan ke generasi berikutnya tetap konsisten. Ada dua mekanisme utama
+                                        reproduksi tumbuhan, yaitu reproduksi seksual dan reproduksi aseksual.
+                                        Reproduksi seksual melibatkan eksogami dan endogami, yang masing-masing
+                                        mengacu pada apakah kombinasi genetik berasal dari satu individu atau dari dua
+                                        individu yang berbeda. Reproduksi aseksual melibatkan mekanisme seperti
+                                        penyebaran buah, pecahan, dan vegetasi.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="bootstrap-pagination" style="margin-top: -20px;">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+
+                                    <li class="page-item" id="btnmaterilanjut"><a class="btn btn-primary"
+                                            id="materilanjut" href="materi3.html">Materi Selanjutnya <i
+                                                class="fa fa-forward" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

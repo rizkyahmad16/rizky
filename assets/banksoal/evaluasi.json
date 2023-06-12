@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "soal": "Tumbuhan yang dikenal sebagai tumbuhan berbunga adalah . . .",
+    "a": "Padi",
+    "b": "Kacang",
+    "c": "Anggrek",
+    "d": "Jagung",
+    "jawaban": "C"
+  },
+  {
+    "id": 2,
+    "soal": "Bagaimana cara tumbuhan menghasilkan makanan . . .",
+    "a": "Dengan fotosintesis",
+    "b": "Dengan makanan tertentu",
+    "c": "Dengan kimia",
+    "d": "Dengan air",
+    "jawaban": "A"
+  },
+  {
+    "id": 3,
+    "soal": "Apa yang disebut sebagai tumbuhan berdaun  . . .",
+    "a": "Padi",
+    "b": "Anggrek",
+    "c": "Kacang",
+    "d": "Pohon",
+    "jawaban": "D"
+  },
+  {
+    "id": 4,
+    "soal": "Bagaimana cara tumbuhan menyebarkan benihnya . . .",
+    "a": "Dengan angin",
+    "b": "Dengan air",
+    "c": "Dengan kimia",
+    "d": "Dengan hewan",
+    "jawaban": "A"
+  },
+  {
+    "id": 5,
+    "soal": "Apa nama bagian dari tumbuhan yang membantu mereka menyimpan air . . .",
+    "a": "Akar",
+    "b": "Batang",
+    "c": "Daun",
+    "d": "Bunga",
+    "jawaban": "B"
+  },
+  {
+    "id": 6,
+    "soal": "Bagaimana mekanisme tumbuhan untuk menghasilkan oksigen . . .",
+    "a": "Dengan menggunakan fotosintesis",
+    "b": "Dengan menggunakan klorofil",
+    "c": "Dengan menggunakan pigmen",
+    "d": "Dengan menggunakan kloroplast",
+    "jawaban": "A"
+  },
+  {
+    "id": 7,
+    "soal": "Apakah yang di maksud tumbuhan Eceng Gondok . . .",
+    "a": "Tumbuhan yang dapat bergerak sendiri",
+    "b": "Tumbuhan yang dapat hidup di air",
+    "c": "Tumbuhan yang dapat beradaptasi dengan lingkungannya",
+    "d": "Tumbuhan air yang tumbuh di rawa-rawa",
+    "jawaban": "D"
+  },
+  {
+    "id": 8,
+    "soal": "Bagaimana cara tumbuhan Eceng Gondok berkembang biak . . .",
+    "a": "Dengan menggunakan biji",
+    "b": "Dengan menggunakan stek",
+    "c": "Dengan menggunakan benih",
+    "d": "Dengan menggunakan serangga",
+    "jawaban": "B"
+  },
+  {
+    "id": 9,
+    "soal": "Di mana asal tumbuhan Teratai  . . .",
+    "a": "China",
+    "b": "India",
+    "c": "Jepang",
+    "d": "Indonesia",
+    "jawaban": "D"
+  },
+  {
+    "id": 10,
+    "soal": "Apa yang menjadi ciri utama bunga Teratai  . . .",
+    "a": "Memiliki tiga helai daun",
+    "b": "Memiliki bunga berbentuk berbintik-bintik",
+    "c": "Memiliki bunga berwarna putih",
+    "d": "Memiliki bunga berbentuk bulat",
+    "jawaban": "C"
+  },
+  {
+    "id": 11,
+    "soal": "Di mana umumnya tersebar tumbuhan Teratai . . .",
+    "a": "Di hutan",
+    "b": "Di tepi sungai",
+    "c": "Di laut",
+    "d": "Di lembah",
+    "jawaban": "B"
+  },
+  {
+    "id": 12,
+    "soal": "Apa yang menjadi kelebihan dari tumbuhan Teratai . . .",
+    "a": "Dapat tumbuh di daerah yang berbeda",
+    "b": "Memiliki bunga yang indah",
+    "c": "Dapat menyerap air dengan baik",
+    "d": "Dapat bertahan lama",
+    "jawaban": "A"
+  },
+  {
+    "id": 13,
+    "soal": "Bagaimana cara menanam Teratai . . .",
+    "a": "Dengan menyiramnya secara rutin",
+    "b": "Dengan melakukan tanam menggunakan media tanam",
+    "c": "Dengan menempatkannya di tanah yang lembab",
+    "d": "Dengan menyiramnya secara berlebihan",
+    "jawaban": "B"
+  },
+  {
+    "id": 14,
+    "soal": "Proses pemanenan padi yang dilakukan dengan memotong tangkai padi di bagian pangkal batang disebut . . .",
+    "a": "Panen basah",
+    "b": "Panen kering",
+    "c": "Panen semi kering",
+    "d": "Panen setengah basah",
+    "jawaban": "B"
+  },
+  {
+    "id": 15,
+    "soal": "Apa nama lain dari tumbuhan Padi . . .",
+    "a": "Sawah",
+    "b": "Bunga matahari",
+    "c": "Jagung",
+    "d": "Tebu",
+    "jawaban": "A"
+  },
+  {
+    "id": 16,
+    "soal": "Bagaimana ciri-ciri dari tumbuhan Padi . . .",
+    "a": "Daun berbentuk bulat dan tajam",
+    "b": "Daun berbentuk lancip dan tumpul",
+    "c": "Daun berbentuk lancip dan tajam",
+    "d": "Daun berbentuk bulat dan tumpul",
+    "jawaban": "C"
+  },
+  {
+    "id": 17,
+    "soal": "Bagaimana cara menanam tumbuhan Padi  . . .",
+    "a": "Tanam benih di lahan kering",
+    "b": "Tanam benih di lahan basah",
+    "c": "Tanam benih dengan air",
+    "d": "Tanam benih dengan pupuk kompos",
+    "jawaban": "A"
+  },
+  {
+    "id": 18,
+    "soal": "Apa yang menjadi masalah utama dari pertumbuhan berlebihan eceng gondok di perairan . . .",
+    "a": "Penurunan suhu air",
+    "b": "Peningkatan keasaman air",
+    "c": "Penurunan kadar oksigen terlarut",
+    "d": "Peningkatan tingkat garam air",
+    "jawaban": "C"
+  },
+  {
+    "id": 19,
+    "soal": "Bagaimana eceng gondok memperoleh nutrisi untuk pertumbuhannya . . .",
+    "a": "Melalui proses fotosintesis",
+    "b": "Melalui penyerapan nutrisi dari substrat perairan",
+    "c": "Melalui asimilasi nutrisi dari udara",
+    "d": "Melalui simbiosis dengan mikroorganisme perairan",
+    "jawaban": "B"
+  },
+  {
+    "id": 20,
+    "soal": "Salah satu dampak ekologis dari ekspansi eceng gondok adalah . . .",
+    "a": "Meningkatkan keberagaman hayati perairan",
+    "b": "Meningkatkan produksi oksigen di perairan",
+    "c": "Menghambat aliran air dan mengurangi keberagaman hayati perairan",
+    "d": "Menurunkan kualitas air dengan menambahkan nutrisi",
+    "jawaban": "C"
+  }
+]

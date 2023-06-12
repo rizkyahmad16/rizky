@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "soal": "Di bawah ini yang merupakan hasil fotosintesis adalah . . .",
+    "a": "Oksigen dan air",
+    "b": "Karbohidrat dan oksigen",
+    "c": "Air dan karbondioksida",
+    "d": "Air dan karbohidrat",
+    "jawaban": "A"
+  },
+  {
+    "id": 2,
+    "soal": "Tempat terjadinya fotosintesis pada tumbuhan adalah . . .",
+    "a": "Akar",
+    "b": "Daun",
+    "c": "Bunga",
+    "d": "batang",
+    "jawaban": "B"
+  },
+  {
+    "id": 3,
+    "soal": "Zat hijau daun yang menjadi bagian penting dalam proses fotosintesis adalah . . .",
+    "a": "Xantrofil",
+    "b": "Antosianin",
+    "c": "Karotenoid",
+    "d": "Klorofil",
+    "jawaban": "D"
+  },
+  {
+    "id": 4,
+    "soal": "Fotosintesis terjadi pada siang hari karena . . .",
+    "a": "Memerlukan udara segar",
+    "b": "Memerlukan udara bersih",
+    "c": "Memerlukan sinar matahari",
+    "d": "Memerlukan udara pagi",
+    "jawaban": "C"
+  },
+  {
+    "id": 5,
+    "soal": "Hasil fotosintesis yang digunakan makhluk hidup untuk bernapas adalah . . .",
+    "a": "Karbondioksida",
+    "b": "Oksigen",
+    "c": "Glukosa",
+    "d": "Air",
+    "jawaban": "B"
+  },
+  {
+    "id": 6,
+    "soal": "Habitat alami tumbuhan eceng gondok biasanya terdapat di  . . .",
+    "a": "Hutan tropis lembab",
+    "b": "Pegunungan tinggi",
+    "c": "Rawa-rawa dan danau",
+    "d": "Gurun pasir",
+    "jawaban": "C"
+  },
+  {
+    "id": 7,
+    "soal": "Apa manfaat ekonomis dari tumbuhan eceng gondok . . .",
+    "a": "Bahan baku tekstil",
+    "b": "Bahan baku kertas",
+    "c": "Bahan baku pakan ternak",
+    "d": "Bahan baku obat-obatan",
+    "jawaban": "D"
+  },
+  {
+    "id": 8,
+    "soal": "Tumbuhan air yang sering menjadi masalah di perairan karena pertumbuhannya yang cepat adalah . . .",
+    "a": "Eceng gondok",
+    "b": "Lumut air",
+    "c": "Ganggang hijau",
+    "d": "Paku air",
+    "jawaban": "A"
+  },
+  {
+    "id": 9,
+    "soal": "Bagaimana eceng gondok memperoleh nutrisi untuk pertumbuhannya  . . .",
+    "a": "Melalui proses fotosintesis",
+    "b": "Melalui penyerapan nutrisi dari substrat perairan",
+    "c": "Melalui asimilasi nutrisi dari udara",
+    "d": "Melalui simbiosis dengan mikroorganisme perairan",
+    "jawaban": "B"
+  },
+  {
+    "id": 10,
+    "soal": "Apa yang menjadi masalah utama dari pertumbuhan berlebihan eceng gondok di perairan . . .",
+    "a": "Penurunan suhu air",
+    "b": "Peningkatan keasaman air",
+    "c": "Penurunan kadar oksigen terlarut",
+    "d": "Peningkatan tingkat garam air",
+    "jawaban": "C"
+  }
+]

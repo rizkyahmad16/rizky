@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-utama2" style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-secondary">
+            <div class="brand-logo">
+                <a href="../beranda.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Home
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-secondary text-white">
+            <div class=" header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <h2 class="text-white mt-4 pl-3">Halaman Nilai Siswa</h2>
+
+                </div>
+                <div class="header-right pt-3 pr-4">
+                    <b><span id="namalihat">Guru</span><i class="pl-3 fas fa-user-graduate"></i></b>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+            <div class="nk-nav-scroll bg-primary">
+                <ul class="metismenu bg-primary" id="menu">
+                    <li class="bg-white pl-4">
+                        <img src="../assets/images/Logo_Dalam.png" width="80%" height="auto" alt="">
+                    </li>
+                    <li class="nav-label">Daftar Isi</li>
+                    <li>
+                        <a href="datasiswa.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Data Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Lembar Kerja Siswa</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="menanya.html">Ayo Menanya</a></li>
+                            <li><a href="mengkomunikasikan.html">Ayo Mengkomunikasikan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="nilai.html" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i><span class="nav-text">Nilai Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pengaturan.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Setting KKM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="isicontent bg-white mt-1" style="width: 100%; height: 600px;">
+                            <div class="card-body">
+                                <center>
+                                    <div class="card-title-md">
+                                        <label for="sekolah">Sekolah :
+                                            <select id="sekolah" name="sekolah" class="mundur"
+                                                aria-placeholder="-PILIH SEKOLAH-">
+                                                <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                                <option value="1">SDN 1 Banjarmasin</option>
+                                            </select>
+                                        </label>
+
+                                        <label for="kelas">Kelas :
+                                            <select id="kelas" name="kelas" class="mundur"
+                                                aria-placeholder="-PILIH KELAS-">
+                                                <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                                <option value="1">IV A</option>
+                                                <option value="2">IV B</option>
+                                                <option value="3">IV C</option>
+                                            </select>
+                                        </label>
+
+                                        <label for="hasil">Hasil :
+                                            <select id="kuis" name="kuis" class="mundur">
+                                                <option value="db_kuis1/" selected="selected">KUIS 1</option>
+                                                <option value="db_kuis2/">KUIS 2</option>
+                                                <option value="db_kuis3/">KUIS 3</option>
+                                                <option value="db_evaluasi/">EVALUASI</option>
+                                            </select>
+                                        </label>
+
+
+                                        <button type="button" class="cari btn btn-success" onclick="mencari()"><i
+                                                class="fa fa-search"></i>&nbsp;&nbsp;Cari</button>
+                                        <button type="button" class="cari btn btn-success download"
+                                            onclick="downloadfile()"><i
+                                                class="fa fa-download"></i>&nbsp;&nbsp;Download</button>
+                                    </div>
+                                </center>
+                                <br>
+                                <table id='table_wrapper' class="table table-bordered">
+                                    <thead class="table-light text-center">
+                                        <tr>
+                                            <th class="ukr1">Nama</td>
+                                            <th class="ukr3">Kelas</td>
+                                            <th class="ukr1">Sekolah</td>
+                                            <th class="ukr3">Skor</td>
+                                            <th class="ukr2">Hari</td>
+                                            <th class="ukr2">Waktu</td>
+                                            <th class="ukr4">Hapus</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="disini"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!-- Modal Download -->
+    <div class="modal fade" id="ModalDownload" tabindex="-1" role="dialog" aria-labelledby="ModalDownloadTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body bg-danger text-white">
+                    Data masih kosong! Silahkan klik tombol Cari
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Filter -->
+    <div class="modal fade" id="ModalFilter" tabindex="-1" role="dialog" aria-labelledby="ModalFilterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body bg-danger text-white">
+                    Tentukan filter pencarian!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus -->
+    <div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="ModalHapusTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title text-center" id="ModalHapusTitle">Konfirmasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menghapus data?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                    <button type="button" onclick="" class="btn btn-primary yakin">Yakin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus Semua-->
+    <div class="modal fade" id="ModalHapusAll" tabindex="-1" role="dialog" aria-labelledby="ModalHapusAllTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title text-center" id="ModalHapusAllTitle">Konfirmasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menghapus semua data?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                    <button type="button" onclick="" class="btn btn-primary yakinAll">Yakin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <!-- DB JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script src="../assets/js/db.js"></script>
+    <script src="../assets/js/nilai.js"></script>
+
+</body>
+
+</html>

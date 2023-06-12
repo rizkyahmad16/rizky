@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-utama2" style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-secondary">
+            <div class="brand-logo">
+                <a href="../beranda.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Home
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-secondary text-white">
+            <div class=" header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <h2 class="text-white mt-4 pl-3">Perkembangbiakan
+                        Tumbuhan</h2>
+
+                </div>
+                <div class="header-right pt-3 pr-4">
+                    <b><span id="namalihat">Nama Siswa</span><i class="pl-3 ti-user"></i></b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+            <div class="nk-nav-scroll bg-primary">
+                <ul class="metismenu bg-primary" id="menu">
+                    <li class="bg-white pl-4">
+                        <img src="../assets/images/Logo_Dalam.png" width="80%" height="auto" alt="">
+                    </li>
+                    <li class="nav-label">Daftar Isi</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Bagian
+                                Tubuh Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan1.html">Pendahuluan</a></li>
+                            <li><a href="materi1.html">Materi</a></li>
+                            <li><a href="kuis1.html">Kuis 1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Fotosintesis, Proses
+                                Paling
+                                Penting di Bumi </span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan2.html">Pendahuluan</a></li>
+                            <li><a href="materi2.html">Materi</a></li>
+                            <li><a href="kuis2.html">Kuis 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Perkembangbiakan
+                                Tumbuhan</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pendahuluan3.html">Pendahuluan</a></li>
+                            <li><a href="materi3.html">Materi</a></li>
+                            <li><a href="kuis3.html">Kuis 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="evaluasi.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Evaluasi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="logout()" style="cursor: pointer;" class="bg-danger" aria-expanded="false">
+                            <i class="fa fa-sign-out"></i><span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="card ">
+                            <div class="">
+                                <ul class="nav nav-pills bg-primary mb-3">
+                                    <li class="nav-item">
+                                        <a href="#mengamati" id="tabmengamat" class="nav-link active" data-toggle="tab"
+                                            aria-expanded="false">
+                                            Ayo Mengamati
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#menanya" id="tabmenanya" class="nav-link" data-toggle="tab"
+                                            aria-expanded="false">
+                                            Ayo Menanya
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#mencoba" id="tabmencoba" class="nav-link" data-toggle="tab"
+                                            aria-expanded="true">
+                                            Ayo Mencoba
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#menalar" id="tabmenalar" class="nav-link" data-toggle="tab"
+                                            aria-expanded="true">
+                                            Ayo Menalar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#mengkomunikasikan" id="tabmengkomunikasikan" class="nav-link"
+                                            data-toggle="tab" aria-expanded="true">
+                                            Ayo Mengkomunikasikan
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content p-3 isicontent" style="height: 530px; width: 100%;">
+                                    <div id="mengamati" class="tab-pane active">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm">
+                                                <div class="p-2">
+                                                    <div class="bordU2 mt-2">
+                                                        <div class="brs mb-2">
+                                                            Pada video ini adalah penjelasan tentang Perkembangbiakan
+                                                            Pada Tanaman Padi. pengguna diminta
+                                                            untuk menyimak dan memperhatikan penjelasan video ini dengan
+                                                            baik.
+                                                        </div>
+                                                        <center>
+                                                            <figure>
+                                                                <video id="video4" onended="stopVideo('video6hide')"
+                                                                    width="65%" height="auto" controls>
+                                                                    <source src="../assets/video/video6.mp4"
+                                                                        type="video/mp4">
+                                                                    Your browser does not support the video tag.
+                                                                </video>
+                                                                <figcaption>Video 6 Perkembangbiakan Pada Tanaman Padi
+                                                                </figcaption>
+                                                            </figure>
+                                                        </center>
+                                                    </div>
+                                                    <div id="video6hide" hidden>
+                                                        <div class="brs">
+                                                            Apakah tumbuhan di hutan ditanam oleh manusia? Jika tidak,
+                                                            lalu
+                                                            bagaimana tumbuhan bisa tumbuh tersebar di mana-mana? Siapa
+                                                            yang
+                                                            menanamnya? Bagaimana cara tumbuhan berkembang biak dan
+                                                            memperbanyak
+                                                            jenisnya?
+                                                        </div>
+                                                        <div class="brs">
+                                                            Pada materi kali ini kita akan mempelajari tentang
+                                                            perkembangbiakan
+                                                            tumbuhan yang berada dilahan basah.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Tahukah kalian apa yang dimaksud dengan perkembangbiakan
+                                                            pada
+                                                            tumbuhan ? Mari kita mengamati penjelasan tentang
+                                                            perkembangbiakan pada
+                                                            tumbuhan.
+                                                        </div>
+                                                        <div class="bord">
+                                                            <img src="../assets/img/icon.png" alt=""> Pengertian
+                                                            Perkembangbiakan Pada Tumbuhan
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perkembangbiakan pada tumbuhan adalah suatu proses yang
+                                                            melibatkan
+                                                            tumbuhan untuk menghasilkan anak yang sejenis. Proses ini
+                                                            bisa
+                                                            terjadi secara
+                                                            alami melalui kawin silang, atau secara artifisial melalui
+                                                            teknik seperti
+                                                            pemuliaan tanaman, teknik budidaya tanaman, atau teknik
+                                                            mutasi
+                                                            genetik.
+                                                            Perkembangbiakan pada tumbuhan berguna untuk menghasilkan
+                                                            hasil
+                                                            yang
+                                                            lebih baik dan meningkatkan produktivitas tanaman.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Selain itu perkembangbiakan pada tumbuhan juga dapat
+                                                            diartikan
+                                                            proses
+                                                            reproduksi umum yang digunakan oleh tumbuhan untuk
+                                                            menghasilkan
+                                                            generasi
+                                                            baru. Ada beberapa cara yang berbeda untuk tumbuhan untuk
+                                                            melakukan
+                                                            perkembangbiakan, termasuk perkembangbiakan seksual dan
+                                                            aseksual.
+                                                            Perkembangbiakan seksual adalah proses di mana dua individu
+                                                            tumbuhan
+                                                            berbeda menghasilkan sel sperma dan sel telur untuk
+                                                            membentuk
+                                                            embrio baru. Perkembangbiakan aseksual adalah proses di mana
+                                                            seorang individu tumbuhan
+                                                            menghasilkan keturunan yang identik secara genetik tanpa
+                                                            bantuan
+                                                            dari
+                                                            individu lain.
+                                                        </div>
+                                                        <div class="bord">
+                                                            <img src="../assets/img/icon.png" alt=""> Macam-macam
+                                                            Perkembangbiakan Pada Tumbuhan
+                                                        </div>
+                                                        <div class="brs">
+                                                            Apakah kalian tahu ada berbagai macam jenis perkembangbiakan
+                                                            pada
+                                                            tumbuhan yaitu perkembangbiakan vegetatif, perkembangbiakan
+                                                            generatif,
+                                                            perkembangbiakan aseksual, dan perkembangbiakan buatan.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Mari kita jabarkan dari beberapa jenis perkembangbiakan
+                                                            tumbuhan
+                                                            tersebut.
+                                                        </div>
+
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>1. Perkembangan Vegetatif</u></h4>
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perkembangbiakan vegetatif adalah proses perkembangbiakan
+                                                            tanpa campuran gamet atau bahan genetik dari dua organisme.
+                                                            Perkembangbiakan vegetatif dapat terjadi secara alami maupun
+                                                            dengan
+                                                            bantuan manusia. Perkembangbiakan vegetatif alami dapat
+                                                            terjadi
+                                                            melalui percabangan, stolon, dan rhizoma. <br>
+                                                            Pada penyerbukan generatif terbagi menjadi beberapa macam,
+                                                            yakni:
+                                                        </div>
+                                                        <div class="abjad">
+                                                            <ol>
+                                                                <li>
+                                                                    Penyerbukan Sendiri
+                                                                    <div class="brs">
+                                                                        Penyerbukan sendiri terjadi pada sebuk sari dan
+                                                                        kepala putik
+                                                                        dalam satu tanaman yang sama.
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    Penyerbukan Tetangga
+                                                                    <div class="brs">
+                                                                        Penyerbukan tetangga terjadi apabila serbuk sari
+                                                                        dan
+                                                                        kepala sari
+                                                                        dari tumbuhan yang sama. Sedangkan kepala putik
+                                                                        berada di
+                                                                        tumbuhan lainnya.
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    Penyerbukan Silang
+                                                                    <div class="brs">
+                                                                        Penyerbukan silang terjadi apabila sebuk sari
+                                                                        dan
+                                                                        kepala sati
+                                                                        berada pada tanaman lain. Akan tetapi tumbuhan
+                                                                        tersebut masih
+                                                                        dalam jenis yang sama.
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    Penyerbukan Bastar
+                                                                    <div class="brs">
+                                                                        Penyerbukan jenis ini terjadi saat serbuk sari
+                                                                        dan
+                                                                        kepala sari
+                                                                        berasal dari bunga lain serta dan tanaman lain
+                                                                        yang
+                                                                        berbeda jenis.
+                                                                    </div>
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>2. Perkembangbiakan Generatif</u></h4>
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perkembangbiakan generatif adalah proses perkembangbiakan
+                                                            yang melibatkan campuran bahan genetik dari dua organisme.
+                                                            Perkembangbiakan generatif dapat terjadi melalui proses
+                                                            pembuahan,
+                                                            perkecambahan, dan konjugasi.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>3. Perkembangbiakan Aseksual</u></h4>
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perkembangbiakan aseksual adalah proses perkembangbiakan
+                                                            tanpa campuran bahan genetik dari dua organisme.
+                                                            Perkembangbiakan
+                                                            aseksual dapat terjadi melalui proses partenogenesis,
+                                                            gemulasi,
+                                                            dan
+                                                            vegetatif.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>4. Perkembangbiakan buatan</u></h4>
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perkembangbiakan buatan adalah cara perkembangbiakan
+                                                            tumbuhan dengan menggunakan teknik-teknik seperti
+                                                            pembenihan,
+                                                            pembagian, dan pemotongan.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Pada bagian sebelumnya kita sudah mempelajari dan mengetahui
+                                                            penjelasan tentang perkembangbiakan tumbuhan dan
+                                                            jenis-jenisnya.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Nah pada materi selanjutnya kita akan mengamati salah satu
+                                                            contoh
+                                                            perkembangbiakan pada tumbuhan yang berada dilahan basah
+                                                            yaitu
+                                                            padi.
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar13.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 13. Tumbuhan Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Bagi masyarakat Indonesia, nasi menjadi makanan pokok yang
+                                                            sangat
+                                                            penting. Ya, seperti yang kita tahu nasi berasal dari padi.
+                                                            Jika
+                                                            bertanya tentang
+                                                            padi, banyak orang yang mengetahui cara mengembangannya
+                                                            melalui
+                                                            biji yang
+                                                            ditaburkan dalam tanah. Padi sejak dulu sudah menjadi
+                                                            tanaman
+                                                            pangan utama
+                                                            bagi masyarakat Indonesia. Kebutuhan akan padi pun menjadi
+                                                            sangat tinggi
+                                                            mengingat jumlah populasi masyarakat Indonesia yang sangat
+                                                            tinggi.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Kebutuhan yang tinggi terhadap tanaman ini memaksa
+                                                            produktivitas
+                                                            padi
+                                                            harus optimal demi mencukupi kebutuhan dalam negeri. Oleh
+                                                            karena
+                                                            itu, untuk
+                                                            mendukung produktivitas yang optimal, teknik budidaya padi
+                                                            harus
+                                                            dilakukan
+                                                            dengan tepat.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Perlu diketahui, cara tersebut bukanlah cara alami. Adapun
+                                                            cara
+                                                            yang alami
+                                                            adalah padi dengan bantuan angin karena bijinya kecil dan
+                                                            mudah
+                                                            diterbangkan
+                                                            hubungan yang menunjukkan cara penyerbukan. Cara tersebut
+                                                            merupakan salah
+                                                            satu dari perkembangbiakan generatif. Apa yang dimaksud
+                                                            dengan
+                                                            perkembangbiakan generatif?
+                                                        </div>
+                                                        <div class="bord">
+                                                            <img src="../assets/img/icon.png" alt=""> Ayo kita pelajari
+                                                            bagian apa saja yang terdapat pada tumbuhan padi
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar14.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 14. Ilustrasi Tumbuhan Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Tumbuhan padi adalah tanaman herba yang berasal dari Asia
+                                                            dan
+                                                            merupakan salah satu tanaman pangan terpenting di seluruh
+                                                            dunia.
+                                                            Padi adalah
+                                                            tanaman budidaya yang ditanam di sawah atau ladang, dengan
+                                                            cara
+                                                            menanam
+                                                            bibit di dalam lubang yang telah dibor atau ditanam di lahan
+                                                            yang telah disiram.
+                                                            Setelah itu, lahan tersebut akan disiram dengan air yang
+                                                            mengalir setiap hari.
+                                                            Padi membutuhkan banyak cahaya matahari dan air untuk tumbuh
+                                                            dengan baik.
+                                                            Ketika panen, padi akan digunakan untuk membuat beras dan
+                                                            berbagai produk
+                                                            beras lainnya, seperti nasi, keripik beras, dan banyak lagi.
+                                                            Padi juga digunakan
+                                                            untuk membuat berbagai macam makanan lainnya seperti tepung
+                                                            beras, keripik
+                                                            beras, dan banyak lagi.
+                                                        </div>
+                                                        <div class="brs">
+                                                            Tumbuhan padi memiliki beberapa bagian yaitu akar, batang,
+                                                            daun
+                                                            dan
+                                                            buah.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>1. Daun</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar15.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 15. Daun Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Daun memiliki tiga fungsi utama: menangkap energi matahari,
+                                                            membantu
+                                                            dalam proses fotosintesis dan mengeluarkan hasil metabolisme
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>2. Batang</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar16.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 16. Batang Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Batang memiliki tiga fungsi utama: memberikan dukungan fisik
+                                                            bagi
+                                                            tanaman, membawa air dan nutrisi dari akar ke daun, dan
+                                                            menopang
+                                                            daun
+                                                            untuk menangkap matahari.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>3. Akar</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar17.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 17. Akar Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Akar berfungsi untuk menjaga stabilitas tanaman dan
+                                                            memberinya
+                                                            dukungan secara fisik. Akar juga berfungsi untuk menyerap
+                                                            air
+                                                            dan nutrisi dari
+                                                            tanah, yang kemudian dapat dibawa ke seluruh tubuh tanaman
+                                                            Akar
+                                                            pada
+                                                            tanaman padi dapat dibedakan menjadi beberapa bagian, yaitu:
+                                                        </div>
+                                                        <div class="abjad">
+                                                            <ol>
+                                                                <li>
+                                                                    Radikula : akar yang tumbuh pada saat benih
+                                                                    berkecambah.
+                                                                    Pada benih
+                                                                    yang berkecambah tumbuh calon akar dan batang. Calon
+                                                                    akar mengalami
+                                                                    pertumbuhan kearah bawah sehingga terbentuk akar
+                                                                    tunggang,
+                                                                    sedangkan calon batang akan tumbuh keatas sehingga
+                                                                    terbentuk batang
+                                                                    dan daun.
+                                                                </li>
+                                                                <li>
+                                                                    Akar serabut : akar serabut akan tumbuh apabila akar
+                                                                    tunggang
+                                                                    terbentuk setelah 5 sampai 6 hari.
+                                                                </li>
+                                                                <li>
+                                                                    Akar rambut : pada akar tunggang dan akar serabut
+                                                                    akan
+                                                                    tumbuh bagian
+                                                                    akar yang keluar. Bagian tersebut merupakan akar
+                                                                    rambut.
+                                                                </li>
+                                                                <li>
+                                                                    Akar tajuk : dari ruas batang yang paling rendah
+                                                                    akan
+                                                                    tumbuh akar yang
+                                                                    disebut sebagai akar tajuk. Akar tumbuhan yang masih
+                                                                    muda berwarna
+                                                                    putih, sadangkan akar tumbuhan yang telah mengalami
+                                                                    perkembangan
+                                                                    (dewasa) berwarna coklat.
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>4. Bunga</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar18.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 18. Bunga Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Bunga berfungsi untuk menarik satwa pemanggil dan membantu
+                                                            dalam
+                                                            proses reproduksi. Bunga juga merupakan bagian tumbuhan yang
+                                                            paling indah
+                                                            dan menarik. Bunga tanaman padi merupakan bunga serangkai
+                                                            yang
+                                                            membentuk malai.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>5. Malai Padi</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar19.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 19. Malai Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Bunga tanaman padi merupakan bunga serangkai yang membentuk
+                                                            malai
+                                                            Tangkai bunga padi adalah ruas batang terakhir yang
+                                                            bercabang,
+                                                            pada cabangcabang tersebut terdapat bunga yang terbentuk
+                                                            sebagai
+                                                            gabah.
+                                                        </div>
+                                                        <div class="pt-2 pl-2">
+                                                            <h4><u>6. Buah</u></h4>
+                                                        </div>
+                                                        <center>
+                                                            <img src="../assets/img/gambar20.png" id="g1" width="25%" />
+                                                            <figcaption class="figure-caption">
+                                                                Gambar 20. Malai Padi
+                                                            </figcaption>
+                                                        </center>
+                                                        <div class="brs">
+                                                            Buah berfungsi untuk menarik satwa pemakan untuk membantu
+                                                            dalam
+                                                            penyebaran biji. Buah juga menyimpan nutrisi penting yang
+                                                            bermanfaat bagi
+                                                            hewan dan manusia.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menanya" class="tab-pane">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm">
+                                                <div class="p-2">
+                                                    <div class="brs">
+                                                        Pada bagian atas kita sudah mempelajari dan mengamati salah satu
+                                                        tubuh
+                                                        pada dari tumbuhan lahan basah yaitu padi.
+                                                    </div>
+                                                    <div class="brs">
+                                                        Nah Kali ini Buatlah pertanyaan dan jawaban berdasarkan proses
+                                                        perkembangbiakan tumbuhan padi, pada kotak jawaban yang sudah
+                                                        disediakan!
+                                                        Lihat pada contoh no 1.
+                                                    </div>
+                                                    <div class="bordU">
+                                                        <div class="angka">
+                                                            <ol>
+                                                                <li>
+                                                                    Apa yang kamu ketahuan tentang padi? <br>
+                                                                    Jawab: <br>
+                                                                    Padi adalah tanaman budidaya yang ditanam di sawah
+                                                                    atau ladang, dengan
+                                                                    cara menanam bibit dalam lubang yang telah dibor
+                                                                    atau ditanam dilahan
+                                                                    yang telah disiram.
+                                                                </li>
+                                                                <li class="mt-1">
+                                                                    <input type="text" id="menanya3_1"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan pertanyaan"> <br>
+                                                                    Jawab: <br>
+                                                                    <input type="text" id="jmenanya3_1"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan Jawaban">
+                                                                </li>
+                                                                <li class="mt-1">
+                                                                    <input type="text" id="menanya3_2"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan pertanyaan"> <br>
+                                                                    Jawab: <br>
+                                                                    <input type="text" id="jmenanya3_2"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan Jawaban">
+                                                                </li>
+                                                                <li class="mt-1">
+                                                                    <input type="text" id="menanya3_3"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan pertanyaan"> <br>
+                                                                    Jawab: <br>
+                                                                    <input type="text" id="jmenanya3_3"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan Jawaban">
+                                                                </li>
+                                                                <li class="mt-1">
+                                                                    <input type="text" id="menanya3_4"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan pertanyaan"> <br>
+                                                                    Jawab: <br>
+                                                                    <input type="text" id="jmenanya3_4"
+                                                                        style="width: 100%;"
+                                                                        placeholder="Isi dengan Jawaban">
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-1 mr-3" style="float: right;">
+                                                        <a onclick="menanya3()" type="button"
+                                                            class="btn btn-success">Kirim</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="mencoba" class="tab-pane">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm">
+                                                <div class="p-2">
+                                                    <div class="brs">
+                                                        Pada bagian materi diatas kita sudah mengetahui bagaimana proses
+                                                        tumbuhan yang berada dilahan basah.
+                                                    </div>
+                                                    <div class="bordU">
+                                                        <center>
+                                                            <div class="font-weight-bold">
+                                                                Petunjuk Pengerjaan Tugas
+                                                            </div>
+                                                        </center>
+                                                        <div class="angka">
+                                                            <ol>
+                                                                <li>
+                                                                    Amati gambar berikut!
+                                                                </li>
+                                                                <li>
+                                                                    Isilah gambar dibawah ini dengan cara menarik salah
+                                                                    satu kata kunci
+                                                                    dan meletakkannya dibawah gambar.
+                                                                </li>
+                                                                <li>
+                                                                    Jika hasil jawaban pada kolom berwarna merah maka
+                                                                    hasil jawaban
+                                                                    yang diisi salah (tidak benar) dan apabila kolom
+                                                                    bewarna hijau maka
+                                                                    jawaban benar.
+                                                                </li>
+                                                                <li>
+                                                                    Tekan tombol periksa untuk melihat hasil jawaban dan
+                                                                    tekan reset
+                                                                    untuk mengulang latihan.
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered verticle-middle">
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar21.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar22.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_1"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_2"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar23.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar24.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_3"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_4"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar25.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                                <td>
+                                                                    <center>
+                                                                        <img src="../assets/img/gambar26.png" id="g1"
+                                                                            width="35%" />
+                                                                    </center>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_5"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center">
+                                                                        Seret Kesini
+                                                                    </div>
+                                                                    <div class="div1" id="mencoba3_6"
+                                                                        ondrop="drop(event)"
+                                                                        ondragover="allowDrop(event)">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="kotakDrag" id="kotakDrag" ondrop="drop(event)"
+                                                        ondragover="allowDrop(event)">
+                                                        <div class="pt-2 font-weight-bold">
+                                                            <u>
+                                                                Kata Kunci
+                                                            </u>
+                                                        </div>
+                                                        <div class="pt-2 text-center">
+                                                            <button class="drag1 btn-success" id="Daun" title="Daun"
+                                                                draggable="true" ondragstart="drag(event)">
+                                                                Daun
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Bunga"
+                                                                title="Bunga" draggable="true"
+                                                                ondragstart="drag(event)">
+                                                                Bunga
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Buah"
+                                                                title="Buah" draggable="true" ondragstart="drag(event)">
+                                                                Buah
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Batang"
+                                                                title="Batang" draggable="true"
+                                                                ondragstart="drag(event)">
+                                                                Batang
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Akar"
+                                                                title="Akar" draggable="true" ondragstart="drag(event)">
+                                                                Akar
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Malai"
+                                                                title="Malai" draggable="true"
+                                                                ondragstart="drag(event)">
+                                                                Malai
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Putik"
+                                                                title="Putik" draggable="true"
+                                                                ondragstart="drag(event)">
+                                                                Putik
+                                                            </button>
+                                                            <button class="drag1 btn-success ml-2" id="Biji"
+                                                                title="Biji" draggable="true" ondragstart="drag(event)">
+                                                                Biji
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ml-2 mt-2">
+                                                        <a onclick="mencoba3()" type="button"
+                                                            class="btn btn-success">Periksa</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menalar" class="tab-pane">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm">
+                                                <div class="p-2">
+                                                    <div class="brs">
+                                                        Setelah kita mengetahui perkembangbiakan tumbuhan dan bagaimana
+                                                        proses perkembangbiakan pada tumbuhan yang terdapat pada lahan
+                                                        basah.
+                                                        Sekarang kita akan menalar lebih jauh lagi seperti apa gambaran
+                                                        proses
+                                                        perkembangbiakan tumbuhan tersebut. Pada materi bagian atas kita
+                                                        sudah
+                                                        memahami macam-macam perkembangbiakan yang ada dimuka bumi ini.
+                                                    </div>
+                                                    <div class="bordU">
+                                                        <center>
+                                                            <div class="font-weight-bold">
+                                                                Petunjuk Pengerjaan Tugas
+                                                            </div>
+                                                        </center>
+                                                        <div class="angka">
+                                                            <ol>
+                                                                <li>
+                                                                    Berikan tanda centang pada gambar yang menurut
+                                                                    kalian adalah proses
+                                                                    fotosintesis alami.
+                                                                </li>
+                                                                <li>
+                                                                    Jika hasil jawaban pada kolom berwarna merah maka
+                                                                    hasil jawaban yang di
+                                                                    isi salah (tidak benar) dan apabila kolom jawaban
+                                                                    berwarna hijau maka
+                                                                    jawaban benar.
+                                                                </li>
+                                                                <li>
+                                                                    Tekan tombol periksa untuk melihat hasil jawaban dan
+                                                                    tekan reset untuk
+                                                                    mengulang latihan.
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive mt-2">
+                                                        <table class="table table-bordered verticle-middle">
+                                                            <tr>
+                                                                <th class="text-center">
+                                                                    gambaran proses perkembangbiakan
+                                                                    tumbuhan
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Benar
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Salah
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Keterangan
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <div class="font-weight-bold">
+                                                                            Seorang Petani Sedang Menanam Padi
+                                                                        </div>
+                                                                        <img src="../assets/img/gambar27.png" id="g1" />
+                                                                    </center>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="bmenalar3_11()"
+                                                                        class="warna-black" name="Bmenalar3_1"
+                                                                        id="Bmenalar3_1">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="smenalar3_11()"
+                                                                        class="warna-black" name="Smenalar3_1"
+                                                                        id="Smenalar3_1">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center" id="ketmenalar3_1"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <div class="font-weight-bold">
+                                                                            Perkembangbiakan dibantu oleh angin
+                                                                        </div>
+                                                                        <img src="../assets/img/gambar28.png" id="g1" />
+                                                                    </center>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="bmenalar3_21()"
+                                                                        class="warna-black" name="Bmenalar3_2"
+                                                                        id="Bmenalar3_2">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="smenalar3_21()"
+                                                                        class="warna-black" name="Smenalar3_2"
+                                                                        id="Smenalar3_2">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center" id="ketmenalar3_2"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <div class="font-weight-bold">
+                                                                            Mencangkok Tanaman
+                                                                        </div>
+                                                                        <img src="../assets/img/gambar29.png" id="g1" />
+                                                                    </center>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="smenalar3_31()"
+                                                                        class="warna-black" name="Bmenalar3_3"
+                                                                        id="Bmenalar3_3">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="bmenalar3_31()"
+                                                                        class="warna-black" name="Smenalar3_3"
+                                                                        id="Smenalar3_3">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center" id="ketmenalar3_3"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <center>
+                                                                        <div class="font-weight-bold">
+                                                                            Proses pertumbuhan tanaman
+                                                                        </div>
+                                                                        <img src="../assets/img/gambar30.png" id="g1" />
+                                                                    </center>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="bmenalar3_41()"
+                                                                        class="warna-black" name="Bmenalar3_4"
+                                                                        id="Bmenalar3_4">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <input type="checkbox" onclick="smenalar3_41()"
+                                                                        class="warna-black" name="Smenalar3_4"
+                                                                        id="Smenalar3_4">
+                                                                </td>
+                                                                <td>
+                                                                    <div class="text-center" id="ketmenalar3_4"></div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="ml-3 mt-2">
+                                                        <a onclick="resetmenalar3()" type="button"
+                                                            class="btn btn-warning">Reset</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="mengkomunikasikan" class="tab-pane">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm">
+                                                <div class="p-2">
+                                                    <div class="bordU">
+                                                        <center>
+                                                            <div class="font-weight-bold">
+                                                                Petunjuk Pengerjaan Tugas
+                                                            </div>
+                                                        </center>
+                                                        <div class="angka">
+                                                            <ol>
+                                                                <li>
+                                                                    Jawablah soal berikut dengan meisi kolom jawaban
+                                                                    yang kosong.
+                                                                </li>
+                                                                <li>
+                                                                    Jawablah soal yang menurut anda mudah untuk
+                                                                    dikerjakan.
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="bordU2">
+                                                        <div>
+                                                            Jawablah pertanyaan berikut berdasarkan hasil pengamatan
+                                                            materi diatas.
+                                                        </div>
+                                                        <div>
+                                                            Sebutkan apa saja bagian tumbuhan padi
+                                                        </div>
+                                                        <textarea name="mengkomunikasikan3_1" id="mengkomunikasikan3_1"
+                                                            cols="100%" rows="5"
+                                                            placeholder="Isi dengan jawaban"></textarea>
+
+                                                        <div>
+                                                            Akar pada tumbuhan padi berfungsi untuk
+                                                        </div>
+                                                        <textarea name="mengkomunikasikan3_1" id="mengkomunikasikan3_2"
+                                                            cols="100%" rows="5"
+                                                            placeholder="Isi dengan jawaban"></textarea>
+                                                        <div>
+                                                            Kesimpulan perkembangbiakan pada tanaman padi.
+                                                        </div>
+                                                        <textarea name="mengkomunikasikan3_1" id="mengkomunikasikan3_3"
+                                                            cols="100%" rows="5"
+                                                            placeholder="Isi dengan jawaban"></textarea>
+                                                        <div class="ml-2 mt-2">
+                                                            <a onclick="mengkomunikasikan3()" type="button"
+                                                                class="btn btn-success">Kirim</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg">
+                        <div class="bootstrap-pagination" style="margin-top: -20px;">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+
+                                    <li class="page-item" id="btnmaterilanjut"><a class="page-link" id="materilanjut"
+                                            href="kuis3.html">Materi Selanjutnya <i class="fa fa-forward"
+                                                aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <!-- DB JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+    <script src="../assets/js/db.js"></script>
+    <script src="../assets/js/simpanbab3.js"></script>
+
+</body>
+
+</html>

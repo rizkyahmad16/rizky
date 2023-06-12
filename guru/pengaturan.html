@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body class="bg-utama2" style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-secondary">
+            <div class="brand-logo">
+                <a href="../beranda.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Home
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-secondary text-white">
+            <div class=" header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <h2 class="text-white mt-4 pl-3">Halaman Setting KKM</h2>
+
+                </div>
+                <div class="header-right pt-3 pr-4">
+                    <b><span id="namalihat">Guru</span><i class="pl-3 fas fa-user-graduate"></i></b>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+            <div class="nk-nav-scroll bg-primary">
+                <ul class="metismenu bg-primary" id="menu">
+                    <li class="bg-white pl-4">
+                        <img src="../assets/images/Logo_Dalam.png" width="80%" height="auto" alt="">
+                    </li>
+                    <li class="nav-label">Daftar Isi</li>
+                    <li>
+                        <a href="datasiswa.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Data Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Lembar Kerja Siswa</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="menanya.html">Ayo Menanya</a></li>
+                            <li><a href="mengkomunikasikan.html">Ayo Mengkomunikasikan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="nilai.html" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i><span class="nav-text">Nilai Siswa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pengaturan.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Setting KKM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="isicontent bg-white mt-1" style="width: 100%; height: 600px;">
+                            <div class="mt-5 table-responsive">
+                                <table class="table table-sm text-center">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Kuis/Evaluasi</th>
+                                            <th scope="col">KKM</th>
+                                            <th scope="col">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Kuis 1</td>
+                                            <td>
+                                                <div class="kkmKuis1"></div>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#modalKuis1"><i
+                                                        class="fa fa-fw fa-pencil"></i>Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Kuis 2</td>
+                                            <td>
+                                                <div class="kkmKuis2"></div>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#modalKuis2"><i
+                                                        class="fa fa-fw fa-pencil"></i>Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Kuis 3</td>
+                                            <td>
+                                                <div class="kkmKuis3"></div>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#modalKuis3"><i
+                                                        class="fa fa-fw fa-pencil"></i>Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Evaluasi</td>
+                                            <td>
+                                                <div class="kkmEvaluasi"></div>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#modalEvaluasi"><i
+                                                        class="fa fa-fw fa-pencil"></i>Edit</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!-- Modal Kuis 1-->
+    <div class="modal fade" id="modalKuis1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit KKM Kuis 1</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">KKM</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control KKM1" id="KKM1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" onclick="setKKM1();"
+                        data-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kuis 2-->
+    <div class="modal fade" id="modalKuis2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit KKM Kuis 2</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">KKM</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control KKM2" id="KKM2">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" onclick="setKKM2();"
+                        data-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kuis 3-->
+    <div class="modal fade" id="modalKuis3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit KKM Kuis 3</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">KKM</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control KKM3" id="KKM3">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" onclick="setKKM3();"
+                        data-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kuis 3-->
+    <div class="modal fade" id="modalEvaluasi" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit KKM Evaluasi</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">KKM</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control KKM4" id="KKM4">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" onclick="setKKM4();"
+                        data-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <!-- DB JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script src="../assets/js/db.js"></script>
+    <script src="../assets/js/kkm.js"></script>
+
+</body>
+
+</html>
