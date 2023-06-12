@@ -2,7 +2,7 @@ function proses_guru() {
     const username = document.getElementById("username");
     const password = document.getElementById("password");
 
-    if (username.value == "Guru" && password.value == "guru") {
+    if (username.value == "1910131310003" && password.value == "rizkyahmad") {
         window.location.href = "guru/datasiswa.html";
     } else if (username.value == "Guru" && password.value != "guru") {
         sweetAlert("Oops...", "Password anda salah !!", "error");
