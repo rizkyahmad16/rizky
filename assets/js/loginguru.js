@@ -4,7 +4,7 @@ function proses_guru() {
 
     if (username.value == "1910131310003" && password.value == "rizkyahmad") {
         window.location.href = "guru/datasiswa.html";
-    } else if (username.value == "Guru" && password.value != "guru") {
+    } else if (username.value == "1910131310003" && password.value != "rizkyahmad") {
         sweetAlert("Oops...", "Password anda salah !!", "error");
     } else if (username.value == "" && password.value == "") {
         sweetAlert("Oops...", "NIP dan Password anda masih kosong, silahkan masukkan terlebih dahulu !!", "error");
