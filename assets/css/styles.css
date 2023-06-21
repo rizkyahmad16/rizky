@@ -158,7 +158,7 @@
 }
 
 .bg-utama {
-    background-image: url('../images/bg-utama.jpg');
+    background-image: url('../images/bg-utama.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -168,10 +168,10 @@
 }
 
 .bgw-utama {
-    background-color: #56D400;
+    background-color: #609966;
     /* padding: 10px; */
 }
 
 .bgw-utama3 {
-    background-color: #1E4901;
+    background-color: #609966;
 }

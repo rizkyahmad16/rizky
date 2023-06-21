@@ -851,7 +851,7 @@
                                                             </tr>
                                                         </table>
                                                     </div>
-                                                    <div class="kotakDrag" id="kotakDrag" ondrop="drop(event)"
+                                                    <div class="kotakDrag" id="game1" ondrop="drop(event)"
                                                         ondragover="allowDrop(event)">
                                                         <div class="pt-2 font-weight-bold">
                                                             <u>
@@ -900,6 +900,8 @@
                                                     <div class="ml-2 mt-2">
                                                         <a onclick="mencoba3()" type="button"
                                                             class="btn btn-success">Periksa</a>
+                                                            <a onclick="resetmencoba3()" type="button"
+                                                            class="btn btn-warning">Reset Jawaban</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1217,6 +1219,58 @@
 
     <script src="../assets/js/db.js"></script>
     <script src="../assets/js/simpanbab3.js"></script>
+
+    <script>
+        var container = document.getElementById("game1");  
+var content = container.innerHTML;
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var evtarget=ev.target;
+      if (evtarget=="[object HTMLImageElement]"){
+           evtarget = evtarget.parentNode;
+      }
+      else {
+      ev.target.appendChild(document.getElementById(data));
+      }
+}
+
+function resetmencoba3(){
+    var container = document.getElementById("game1");
+    container.innerHTML= datadrag;
+    mencoba3_1.classList.remove('warna-success');
+    mencoba3_1.classList.remove('warna-danger');
+    mencoba3_2.classList.remove('warna-success');
+    mencoba3_2.classList.remove('warna-danger');
+    mencoba3_3.classList.remove('warna-success');
+    mencoba3_3.classList.remove('warna-danger');
+    mencoba3_4.classList.remove('warna-success');
+    mencoba3_4.classList.remove('warna-danger');
+    mencoba3_5.classList.remove('warna-success');
+    mencoba3_5.classList.remove('warna-danger');
+    mencoba3_6.classList.remove('warna-success');
+    mencoba3_6.classList.remove('warna-danger');
+    mencoba3_1.innerHTML= '';
+    mencoba3_2.innerHTML= '';
+    mencoba3_3.innerHTML= '';
+    mencoba3_4.innerHTML= '';
+    mencoba3_5.innerHTML= '';
+    mencoba3_6.innerHTML= '';
+}                
+var datadrag;
+window.onload = function(){
+	datadrag = document.getElementById('game1').innerHTML;
+};  
+    </script>
 
 </body>
 

@@ -85,8 +85,19 @@ function AunthenticateUser() {
                 sessionStorage.setItem("nama", namadb);
                 sessionStorage.setItem("kelas", kelasdb);
                 sessionStorage.setItem("sekolah", sekolahdb);
-                sweetAlert("Yeeee", "Berhasil Login", "success");
-                window.location.href = ('beranda.html');
+                // sweetAlert("Berhasil", "Selamat Anda Berhasil Login", "success");
+                Swal.fire({
+                    title: 'Selamat Anda Berhasil Login',
+                    icon: 'success',
+                    // showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    // cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya',
+                }).then(function () {
+                            window.location = 'beranda.html';
+                            // window.location.hre/f = ('beranda.html');
+                        });
+                    
 
             } else {
                 sweetAlert("Oops...", "Username dan Password anda salah", "error");

@@ -798,7 +798,7 @@
                                                     </div>
                                                     <div class="kotakDrag" id="kotakDrag" ondrop="drop(event)"
                                                         ondragover="allowDrop(event)">
-                                                        <div class=" pt-2 text-center">
+                                                        <div id="game1" class=" pt-2 text-center">
                                                             <div class="font-weight-bold">
                                                                 <u>Kata Kunci:</u>
                                                             </div>
@@ -897,6 +897,8 @@
                                                     <div class="ml-3">
                                                         <a onclick="menalar1()" type="button"
                                                             class="btn btn-success">Cek Jawaban</a>
+                                                            <a onclick="reset1()" type="button"
+                                                            class="btn btn-warning">Reset Jawaban</a>
                                                     </div>
                                                     <div id="ketmenalar1"></div>
                                                 </div>
@@ -1056,6 +1058,52 @@
 
     <script src="../assets/js/db.js"></script>
     <script src="../assets/js/simpanbab1.js"></script>
+
+    <script>
+        var container = document.getElementById("game1");  
+var content = container.innerHTML;
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var evtarget=ev.target;
+      if (evtarget=="[object HTMLImageElement]"){
+           evtarget = evtarget.parentNode;
+      }
+      else {
+      ev.target.appendChild(document.getElementById(data));
+      }
+}
+
+function reset1(){
+    var container = document.getElementById("game1");
+    container.innerHTML= datadrag;
+    menalar1_1.classList.remove('warna-success');
+    menalar1_1.classList.remove('warna-danger');
+    menalar1_2.classList.remove('warna-success');
+    menalar1_2.classList.remove('warna-danger');
+    menalar1_3.classList.remove('warna-success');
+    menalar1_3.classList.remove('warna-danger');
+    menalar1_4.classList.remove('warna-success');
+    menalar1_4.classList.remove('warna-danger');
+    menalar1_1.innerHTML= '';
+    menalar1_2.innerHTML= '';
+    menalar1_3.innerHTML= '';
+    menalar1_4.innerHTML= '';
+}                
+var datadrag;
+window.onload = function(){
+	datadrag = document.getElementById('game1').innerHTML;
+};  
+    </script>
 
 </body>
 

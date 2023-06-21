@@ -319,7 +319,7 @@ function mencoba2() {
                         <div class="pembahasan2">
                         <u>Pembahasan :</u>
                         </div>
-                        dari gambar di samping kita dapat mengetahui bahwa nomor 1. bunga, 2. daun, 3. akar dan 4. batang
+                        // dari gambar di samping kita dapat mengetahui bahwa nomor 1. bunga, 2. daun, 3. akar dan 4. batang
                         </div>`;
         } else {
             const ketmencoba2 = document.getElementById('ketmencoba2');
@@ -336,13 +336,20 @@ function mencoba2() {
         mencoba2_3.disabled = true;
         mencoba2_4.disabled = true;
         mencoba2_5.disabled = true;
+//         // Get all options within <select id='foo'>...</select>
+// var op = document.getElementById("mencoba2_1").getElementsByTagName("option");
+// for (var i = 0; i < op.length; i++) {
+//   // lowercase comparison for case-insensitivity
+//   (op[i].value.toLowerCase() == "akar") 
+//     ? op[i].disabled = true 
+//     : op[i].disabled = false ;
+// }
     }
 }
 
 function resetmencoba2() {
     ketmencoba2.innerHTML = "";
-    mencoba2_1.innerHTML = `<option selected class="text-center">-Pilih
-                                                                            Jawaban-</option>`;
+    mencoba2_1.value = `-Pilih Jawaban-`;
     mencoba2_2.value = "-Pilih Jawaban-";
     mencoba2_3.value = "-Pilih Jawaban-";
     mencoba2_4.value = "-Pilih Jawaban-";
