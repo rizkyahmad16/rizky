@@ -240,7 +240,7 @@ function menalar1() {
         }
 
 
-        if ((menalar1_1.children[0] == Daun) || (menalar1_2.children[0] == Bunga) || (menalar1_3.children[0] == Batang) || (menalar1_4.children[0] == Akar)) {
+        if ((menalar1_1.children[0] == Daun) && (menalar1_2.children[0] == Bunga) && (menalar1_3.children[0] == Batang) && (menalar1_4.children[0] == Akar)) {
             const ketmenalar1 = document.getElementById('ketmenalar1');
             ketmenalar1.innerHTML = `<div class="pembahasan mt-3 mr-3 p-3">
                         Jawaban Anda ${benar}<br>
