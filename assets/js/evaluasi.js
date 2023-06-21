@@ -550,9 +550,9 @@ function cekKuis1TO() {
   }
 
   localStorage.setItem("nkuis1", nilai);
-  var namaS = localStorage.getItem("nama");
-  var kelasS = localStorage.getItem("kelas");
-  var sekolahS = localStorage.getItem("sekolah");
+  var namaS = sessionStorage.getItem("nama");
+  var kelasS = sessionStorage.getItem("kelas");
+  var sekolahS = sessionStorage.getItem("sekolah");
   let harinya = hari();
   let waktunya = waktu();
   if (nilai < kkm1) {
@@ -617,9 +617,9 @@ function cekKuis1() {
     }
 
     localStorage.setItem("nkuis1", nilai);
-    var namaS = localStorage.getItem("nama");
-    var kelasS = localStorage.getItem("kelas");
-    var sekolahS = localStorage.getItem("sekolah");
+    var namaS = sessionStorage.getItem("nama");
+    var kelasS = sessionStorage.getItem("kelas");
+    var sekolahS = sessionStorage.getItem("sekolah");
     let harinya = hari();
     let waktunya = waktu();
     if (nilai < kkm1) {
