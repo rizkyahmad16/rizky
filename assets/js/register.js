@@ -91,8 +91,17 @@ function RegisterUser() {
             })
                 .then(() => {
                     // alert('Akun Berhasil Dibuat');
-                    sweetAlert("Yeeeee", "Akun Berhasil Dibuat!", "success");
-                    window.location = "index.html";
+                    Swal.fire({
+                        title: 'Akun Berhasil Di Buat',
+                        icon: 'success',
+                        // showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        // cancelButtonColor: '#d33',
+                        confirmButtonText: 'Ya',
+                    }).then(function () {
+                                window.location = 'index.html';
+                                // window.location.hre/f = ('beranda.html');
+                            });
                 })
 
             // .catch((error) => {
