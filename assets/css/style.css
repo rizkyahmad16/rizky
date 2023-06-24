@@ -2727,13 +2727,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  /* color: #fff; */
   background-color: #9DC08B;
   border-color: #9DC08B;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  /* color: #fff; */
   background-color: #609966;
   border-color: #609966;
 }
@@ -4330,6 +4330,7 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  color: #000;
 }
 
 .nav-link.disabled {
@@ -12244,6 +12245,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .nk-sidebar .metismenu>li>a {
   transition: none;
+  color: #000;
 }
 
 .nk-sidebar .metismenu>li:hover i,
@@ -12295,6 +12297,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .nk-sidebar .metismenu ul ul a {
   padding: 0.625rem 0.9375rem 0.625rem 3.75rem;
+  
 }
 
 .nk-sidebar .metismenu .mega-menu ul.in li a:hover,
@@ -20995,11 +20998,11 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 
 [data-sibebarbg="color_1"] .nk-sidebar .metismenu>li {
-  color: #27394F;
+  color: #000;
 }
 
 [data-sibebarbg="color_1"] .nk-sidebar .metismenu>li ul a {
-  color: #76838f;
+  color: #000;
 }
 
 [data-sibebarbg="color_2"] .nk-sidebar {
