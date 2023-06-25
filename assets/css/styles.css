@@ -175,3 +175,9 @@
 .bgw-utama3 {
     background-color: #609966;
 }
+
+.halamansiswa:hover{
+    color: #609966;
+    padding: 10px;
+    background-color: #fff;
+}

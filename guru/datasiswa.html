@@ -93,7 +93,7 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar bg-primary" style="overflow: auto;">
+        <div class="nk-sidebar bg-primary">
             <div class="nk-nav-scroll bg-primary">
                 <ul class="metismenu bg-primary" id="menu">
                     <li class="bg-white pl-4">
@@ -141,7 +141,7 @@
                     <div class="col-lg">
                         <div class="isicontent bg-white mt-1" style="width: 100%; height: 600px;">
                             <div class="card-body">
-                                <center>
+                                <!-- <center>
                                     <div class="card-title-md">
                                         <label for="sekolah">Sekolah :
                                             <select id="sekolah" name="sekolah" class="mundur"
@@ -170,9 +170,9 @@
                                                 class="fas fa-download"></i>&nbsp;&nbsp;Download</button>
                                     </div>
                                 </center>
-                                <br>
+                                <br> -->
                                 <div class="table-wrapper">
-                                    <table id='table-siswa' class="table table-striped">
+                                    <table id='table_siswa' class="table table-striped">
                                         <thead class="table-light">
                                             <tr>
                                                 <th class="ukr1">No</td>
@@ -181,6 +181,7 @@
                                                 <th class="ukr1">Password</td>
                                                 <th class="ukr2">Sekolah</td>
                                                 <th class="ukr2">Kelas</td>
+                                                    <th class="ukr2">Aksi</td>
                                             </tr>
                                         </thead>
                                         <tbody class="disini"></tbody>
@@ -334,7 +335,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
 
     <script src="../assets/js/db.js"></script>
-    <script src="../assets/js/datasiswa.js"></script>
+    <script src="../assets/js/datasiswa.js" type="module"></script>
+    <!-- <script src="../assets/js/datasiswa.js"></script> -->
 
 </body>
 

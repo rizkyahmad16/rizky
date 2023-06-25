@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tumbuhan, Sumber Kehidupan di Bumi</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet" />
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css" />
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css" />
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="bg-utama2">
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="bg-primary p-3">
+            <div class="text-center text-white">
+                <h3 class="text-white">Informasi Data Diri</h3>
+            </div>
+        </div>
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-lg">
+
+
+                    <div id="halamansiswapribadi">
+                        <div class="isi p-2 " style="width: 100%;">
+                            <div class="row">
+
+                                <div class="col-lg m-3">
+                                    <div class="h5 font-weight-bold">
+                                        <div class="ms-3 mb-3 me-3">
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <a style="cursor:default;">
+                                                        <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                            style="font-weight: normal;">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            Data Siswa
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card card-body border border-success"
+                                                            style="font-weight: normal; height: 230px;">
+                                                            <div class="row">
+                                                                <div class="col-xl-4">
+                                                                    Nama
+                                                                </div>
+                                                                <div class="col-xl">
+                                                                    : <span id="namasiswa"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                                <div class="col-xl-4">
+                                                                    NISN
+                                                                </div>
+                                                                <div class="col-xl">
+                                                                    : <span id="nisnsiswa"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                                <div class="col-xl-4">
+                                                                    Kelas
+                                                                </div>
+                                                                <div class="col-xl">
+                                                                    : <span id="kelassiswa"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3 mb-3">
+                                                                <div class="col-xl-4">
+                                                                    Sekolah
+                                                                </div>
+                                                                <div class="col-xl">
+                                                                    : <span id="sekolahsiswa"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-2 text-center">
+                                                                <a type="button" class="btn btn-danger"
+                                                                    onclick="logout()" style="cursor: pointer;"><i
+                                                                        class="fa fa-sign-out"></i>
+                                                                    Keluar</a>
+                                                                <a id="mulai1" class="btn text-white"
+                                                                    href="../beranda.html"
+                                                                    style="cursor: pointer; background-color: #2980b9;"><i
+                                                                    class="fa fa-arrow-circle-left"></i> Kembali</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl">
+                                                    <a style="cursor:default;">
+                                                        <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                            style="font-weight: normal;">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            Informasi Kuis 1
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card" style="width: 100%;">
+                                                            <div class="card-body">
+                                                                <table id='table-wrapper' style="width: 50%;" class="table table-bordered">
+                                                                    <thead class="table-light text-center">
+                                                                        <tr>
+                                                                            <th class="ukr1">Percobaan</td>
+                                                                            <th class="ukr3">Nilai</td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="disini"></tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a style="cursor:default;">
+                                                        <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                            style="font-weight: normal;">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            Informasi Kuis 2
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card" style="width: 100%;">
+                                                            <div class="card-body">
+                                                                <table id='table-wrapper' style="width: 50%;" class="table table-bordered">
+                                                                    <thead class="table-light text-center">
+                                                                        <tr>
+                                                                            <th class="ukr1">Percobaan</td>
+                                                                            <th class="ukr3">Nilai</td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="disini2"></tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a style="cursor:default;">
+                                                        <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                            style="font-weight: normal;">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            Informasi Kuis 3
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card" style="width: 100%;">
+                                                            <div class="card-body">
+                                                                <table id='table-wrapper' style="width: 50%;" class="table table-bordered">
+                                                                    <thead class="table-light text-center">
+                                                                        <tr>
+                                                                            <th class="ukr1">Percobaan</td>
+                                                                            <th class="ukr3">Nilai</td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="disini3"></tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 
+
+                                                    <a style="cursor:default;">
+                                                        <div class="text-truncate bg-primary text-white petunjuk2 rounded p-2"
+                                                            style="font-weight: normal;">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                            Informasi Evaluasi
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card" style="width: 100%;">
+                                                            <div class="card-body">
+                                                                <table id='table-wrapper' style="width: 50%;" class="table table-bordered">
+                                                                    <thead class="table-light text-center">
+                                                                        <tr>
+                                                                            <th class="ukr1">Percobaan</td>
+                                                                            <th class="ukr3">Nilai</td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="disini5"></tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.easing.min.js"></script>
+
+    <!-- DB JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <!-- <script src="../assets/js/script.js"></script> -->
+
+    <script src="../assets/js/db.js"></script>
+    <script src="../assets/js/datasiswapribadi.js"></script>
+
+
+</body>
+
+</html>
